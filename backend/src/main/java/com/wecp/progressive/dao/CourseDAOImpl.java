@@ -7,6 +7,11 @@ import com.wecp.progressive.entity.Course;
 
 public class CourseDAOImpl implements CourseDAO{
 
+    
+    public CourseDAOImpl(){
+        
+    }
+    
     @Override
     public int addCourse(Course course) {
         return -1;

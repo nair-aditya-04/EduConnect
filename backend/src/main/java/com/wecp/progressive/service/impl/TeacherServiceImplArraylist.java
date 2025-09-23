@@ -7,12 +7,13 @@ import java.util.List;
 import com.wecp.progressive.entity.Teacher;
 
 public class TeacherServiceImplArraylist  {
-    List<Teacher> teacherList = new ArrayList<>();
+    private static List<Teacher> teacherList = new ArrayList<>();
     public List<Teacher> getAllTeachers(){
         return teacherList;
     }
     public Integer addTeacher(Teacher teacher){
-        return -1;
+        teacherList.add(teacher);
+        return teacherList.size();
     }
     public List<Teacher> getTeacherSortedByExperience(){
         Collections.sort(teacherList);

@@ -8,6 +8,9 @@ import com.wecp.progressive.entity.Teacher;
 
 public class TeacherDAOImpl implements TeacherDAO{
 
+    public TeacherDAOImpl(){
+        
+    }
     @Override
     public int addTeacher(Teacher teacher) {
         return -1;
