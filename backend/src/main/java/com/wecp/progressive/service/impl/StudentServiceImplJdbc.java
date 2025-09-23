@@ -5,7 +5,7 @@ import java.util.List;
 
 import com.wecp.progressive.dao.StudentDAO;
 import com.wecp.progressive.entity.Student;
-<<<<<<< HEAD
+
 import com.wecp.progressive.service.StudentService;
 
 public class StudentServiceImplJdbc implements StudentService{
@@ -15,12 +15,7 @@ public class StudentServiceImplJdbc implements StudentService{
     public StudentServiceImplJdbc(StudentDAO studentDAO) {
         this.studentDAO = studentDAO;
     }
-=======
 
-public class StudentServiceImplJdbc  {
-    private StudentDAO studentDAO;
-
->>>>>>> afc97f7b36b352dd6efa7148b3246da178a44750
     public List<Student> getAllStudents(){
         return studentDAO.getAllStudents();
     }
