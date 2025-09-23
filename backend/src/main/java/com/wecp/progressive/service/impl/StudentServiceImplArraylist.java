@@ -1,6 +1,7 @@
 package com.wecp.progressive.service.impl;
 
 import java.util.ArrayList;
+<<<<<<< HEAD
 import java.util.Collections;
 import java.util.List;
 
@@ -25,4 +26,25 @@ public class StudentServiceImplArraylist implements StudentService {
         studentList.clear();
     }
 
+=======
+import java.util.List;
+
+import com.wecp.progressive.entity.Student;
+
+public class StudentServiceImplArraylist  {
+    List<Student> ls = new ArrayList<>();
+    public List<Student> getAllstudents(){
+       return ls;
+    }
+
+    public Integer addStudent(Student student){
+        return -1;
+    }
+    public List<Student> getAllStudentSortedByName(){
+        return ls;
+    }
+    public void emptyArrayList(){
+        
+    }
+>>>>>>> afc97f7b36b352dd6efa7148b3246da178a44750
 }

@@ -1,6 +1,10 @@
 package com.wecp.progressive.entity;
 import java.util.*;
+<<<<<<< HEAD
 public class Student implements Comparable<Student>{
+=======
+public class Student {
+>>>>>>> afc97f7b36b352dd6efa7148b3246da178a44750
     private int studentId;
     private String fullName;
     private Date dateOfBirth;
@@ -54,10 +58,13 @@ public class Student implements Comparable<Student>{
     public void setAddress(String address) {
         this.address = address;
     }
+<<<<<<< HEAD
     @Override
     public int compareTo(Student o) {
         return getFullName().compareTo(o.getFullName());
     }
+=======
+>>>>>>> afc97f7b36b352dd6efa7148b3246da178a44750
     
     
     
