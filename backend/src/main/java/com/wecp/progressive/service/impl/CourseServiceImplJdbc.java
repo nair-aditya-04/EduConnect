@@ -1,11 +1,19 @@
 package com.wecp.progressive.service.impl;
 
+<<<<<<< HEAD
 //import java.sql.SQLException;
+=======
+import java.sql.SQLException;
+>>>>>>> cdcd9f94628c8f7518b237e332762da0930cd856
 import java.util.ArrayList;
 import java.util.List;
 
 import com.wecp.progressive.dao.CourseDAO;
+<<<<<<< HEAD
 // import com.wecp.progressive.dao.CourseDAOImpl;
+=======
+import com.wecp.progressive.dao.CourseDAOImpl;
+>>>>>>> cdcd9f94628c8f7518b237e332762da0930cd856
 import com.wecp.progressive.entity.Course;
 import com.wecp.progressive.service.CourseService;
 
