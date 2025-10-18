@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome Headless 119.0.6045.105 (Linux x86_64)" package="" timestamp="2025-10-18T18:00:11" id="0" hostname="ip-172-31-23-100" tests="0" errors="0" failures="0" time="0">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/119.0.6045.105 Safari/537.36"/>
+  </properties>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
