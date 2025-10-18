@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Course } from '../../models/Course';
@@ -157,4 +158,10 @@ export class DashboardComponent implements OnInit {
             })
         }
     }
+=======
+
+export class DashboardComponent  {
+ 
+
+>>>>>>> aded839ee546cd3f1352e0b1340b17be457d4484
 }

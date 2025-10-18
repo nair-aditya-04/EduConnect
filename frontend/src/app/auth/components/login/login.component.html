@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="login-form-container">
     <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="login-form">
         <h2 class="form-title">Login</h2>
@@ -46,3 +47,14 @@
         </div>
     </form>
 </div>
+=======
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <input formControlName="username" placeholder="Username">
+    <input type="password" formControlName="password" placeholder="Password">
+
+    <button type="submit">Login</button>
+
+    <div *ngIf="errorMessage" class="error">{{errorMessage}}</div>
+    <div *ngIf="successMessage" class="success">{{successMessage}}</div>
+</form>
+>>>>>>> aded839ee546cd3f1352e0b1340b17be457d4484

@@ -12,6 +12,7 @@ export class Enrollment {
         this.enrollmentDate = enrollmentDate;
     }
 
+<<<<<<< HEAD
     // logAttributes() : void{
     //     console.log("enrollmentId:",this.enrollmentId);
     //     console.log("studentId:",this.studentId);
@@ -19,6 +20,15 @@ export class Enrollment {
     //     console.log("enrollmentDate:",this.enrollmentDate);
 
     // }
+=======
+    logAttributes() : void{
+        console.log("enrollmentId:",this.enrollmentId);
+        console.log("studentId:",this.studentId);
+        console.log("courseId:",this.courseId);
+        console.log("enrollmentDate:",this.enrollmentDate);
+
+    }
+>>>>>>> aded839ee546cd3f1352e0b1340b17be457d4484
 }
 
 

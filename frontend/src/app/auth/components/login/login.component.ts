@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -49,5 +50,39 @@ export class LoginComponent {
         } else {
             this.errorMessage = 'Please fill out the form correctly.';
         }
+=======
+import { Component } from "@angular/core";
+import { FormBuilder, FormGroup, Validators } from "@angular/forms";
+
+@Component({
+    selector:'app-login',
+    templateUrl:'./login.component.html',
+    styleUrls:['./login.component.scss']
+})
+
+export class LoginComponent  {
+    loginForm: FormGroup;
+    successMessage: string | null =null;
+    errorMessage: string | null=null;
+    
+    constructor(private fb: FormBuilder)
+    {
+        this.loginForm=this.fb.group({
+            username:['', Validators.required],
+            password:['', Validators.required]
+        });
+    }
+    onSubmit(): void
+    {
+        this.successMessage=null;
+        this.errorMessage=null;
+
+        if(this.loginForm.invalid)
+        {
+            this.errorMessage='Please fill out all fields correctly.';
+            return;
+        }
+        this.successMessage='Login successful!';
+>>>>>>> aded839ee546cd3f1352e0b1340b17be457d4484
     }
 }

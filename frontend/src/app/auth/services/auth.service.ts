@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Observable } from "rxjs";
 import { environment } from "src/environments/environment";
@@ -48,5 +49,34 @@ export class AuthService {
 
   createUser(user: UserRegistrationDTO): Observable<any> {
     return this.http.post<UserRegistrationDTO>(`${this.loginUrl}/user/register`, user);
+=======
+import { Injectable } from "@angular/core";
+import { HttpClient, HttpHeaders } from "@angular/common/http";
+import { map, Observable } from "rxjs";
+import { User } from "../../educonnect/models/User";
+
+export class AuthService {
+
+  constructor(private http: HttpClient) {}
+
+  login(user: Partial<User>): Observable<{ [key: string]: string }> {
+    return new Observable();
+  }
+
+  getToken() : string {
+    return '';
+  }
+
+  getRole() : string {
+    return '';
+  }
+
+  getUsers(): Observable<User[]> {
+    return new Observable();
+  }
+
+  createUser(user: User): Observable<User> {
+    return new Observable();
+>>>>>>> aded839ee546cd3f1352e0b1340b17be457d4484
   }
 }

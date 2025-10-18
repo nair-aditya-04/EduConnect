@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
+<<<<<<< HEAD
 import { CourseCreateComponent } from "./components/coursecreate/coursecreate.component";
 import { CourseEditComponent } from "./components/courseedit/courseedit.component";
 import { DashboardComponent } from "./components/dashboard/dashboard.component";
@@ -19,6 +20,10 @@ const routes: Routes = [
   { path: 'course/edit/:id', component: CourseEditComponent },
   { path: 'enrollment', component: EnrollmentComponent },
 ];
+=======
+
+const routes: Routes = [];
+>>>>>>> aded839ee546cd3f1352e0b1340b17be457d4484
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -15,5 +16,10 @@ export class NavBarComponent implements OnInit {
     console.log(localStorage.getItem("role"));
     this.role=localStorage.getItem("role");
   }
+=======
+export class NavBarComponent{
+
+  
+>>>>>>> aded839ee546cd3f1352e0b1340b17be457d4484
 
 }

@@ -7,6 +7,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { StudentCreateComponent } from "./components/studentcreate/studentcreate.component";
 import { TeacherCreateComponent } from "./components/teachercreate/teachercreate.component";
 import { CourseCreateComponent } from "./components/coursecreate/coursecreate.component";
+<<<<<<< HEAD
 import { RouterModule } from "@angular/router";
 import { EnrollmentComponent } from "./components/enrollment/enrollment.component";
 import { SharedModule } from "../shared/shared.module";
@@ -25,17 +26,33 @@ import { CourseEditComponent } from "./components/courseedit/courseedit.componen
     StudentEditComponent,
     TeacherEditComponent,
     CourseEditComponent
+=======
+// import { StudentSampleComponent } from "./components/studentsample/studentsample.component";
+@NgModule({
+  declarations: [
+  // StudentSampleComponent
+  StudentCreateComponent,
+  TeacherCreateComponent,
+  CourseCreateComponent,
+
+>>>>>>> aded839ee546cd3f1352e0b1340b17be457d4484
   ],
   imports: [
     CommonModule,
     ReactiveFormsModule,
     HttpClientModule,
     FormsModule,
+<<<<<<< HEAD
     RouterModule,
     EduConnectRoutingModule,
     SharedModule
   ],
   exports: [
+=======
+  ],
+  exports: [
+    
+>>>>>>> aded839ee546cd3f1352e0b1340b17be457d4484
   ]
 })
 export class EduconnectModule {}

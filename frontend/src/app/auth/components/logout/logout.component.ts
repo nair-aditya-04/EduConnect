@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
@@ -15,5 +16,10 @@ export class LogoutComponent {
         this.authService.logout();
         this.router.navigate(["/auth"]);
     }
+=======
+
+export class LogoutComponent {
+
+>>>>>>> aded839ee546cd3f1352e0b1340b17be457d4484
 
 }

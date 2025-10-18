@@ -15,6 +15,7 @@ export class StudentDTO {
             this.contactNumber = contactNumber;
     }
 
+<<<<<<< HEAD
     // logAttributes() : void{
     //     console.log("studentId:",this.studentId);
     //     console.log("username:",this.username);
@@ -23,4 +24,14 @@ export class StudentDTO {
     //     console.log("dateOfBirth:",this.dateOfBirth);
     //     console.log("contactNumber:",this.contactNumber);
     // }
+=======
+    logAttributes() : void{
+        console.log("studentId:",this.studentId);
+        console.log("username:",this.username);
+        console.log("password:",this.password);
+        console.log("fullName:",this.fullName);
+        console.log("dateOfBirth:",this.dateOfBirth);
+        console.log("contactNumber:",this.contactNumber);
+    }
+>>>>>>> aded839ee546cd3f1352e0b1340b17be457d4484
 }

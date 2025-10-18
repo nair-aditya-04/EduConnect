@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
@@ -111,3 +112,9 @@ export class StudentEditComponent implements OnInit {
     }
 }
 
+=======
+
+export class StudentEditComponent {
+ 
+}
+>>>>>>> aded839ee546cd3f1352e0b1340b17be457d4484
