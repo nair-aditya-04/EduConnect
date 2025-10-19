@@ -1,0 +1,51 @@
+###
+ POST http://localhost:5000/user/register
+Content-Type: application/json
+
+{
+    "username":"aaaa",
+    "password":"45671",
+    "role":"teacher",
+    "fullName":"goukul rama chandhra",
+    "contactNumber":"94567867",
+    "email":"a@gmail.com",
+    "address":"Krishna",
+    "dateOfBirth":"2003-08-13",
+    "subject":"maths",
+    "yearsOfExperience":34
+
+ }
+###
+POST http://localhost:5000/user/login
+Content-Type: application/json
+
+{
+    "username":"aaaa",
+       "password":"45671"
+}
+
+# GET http://localhost:5000/user/1
+# Content-Type: application/json
+###
+# POST http://localhost:5000/student
+# Content-Type: application/json
+
+# {
+#     "fullName":"Narayana",
+#     "dateOfBirth":"2003-08-13",
+#     "contactNumber":"94567867",
+#      "email":"n@gmail.com",
+#      "address":"nadhayalla"
+# }
+
+#Enrollment 
+# It has student, course (course has teacherId )
+POST http://localhost:5000/enrollment
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6MiwiaWF0IjoxNzYwODcwMzkxLCJleHAiOjE3NjA5NTY3OTF9._z5YXpASXfpuoJ7f25jRt13S6w4qUNcy34PFYMJKWg4xeJwoazi-ET8Xz8bFAoYB4OYYpUBcNoGNWFzOh8Wt2ga 
+Content-Type: application/json
+
+{
+    "student" : {"studentId" : 1},
+    "course" : {"courseId" : 2},
+    "enrollmentDate" : "2025-09-12"
+}
