@@ -1,0 +1,88 @@
+# POST http://localhost:5000/user/register
+# Content-Type: application/json
+ 
+# {
+#   "username": "Amber",
+#   "password": "amb123",
+#   "role": "STUDENT",
+#   "fullName": "Amber Drew",
+#   "contactNumber": "7896540321",
+#   "email": "amber@gmail.com",
+#   "address": "Winston",
+#   "dateOfBirth": "2000-05-05",
+#   "subject": "maths",
+#   "yearsOfExperience": 29
+# }
+#####
+# POST http://localhost:5000/user/login
+# Content-Type: application/json
+ 
+# {
+#   "username": "Teacher1",
+#   "password": "amb123"
+# }
+ 
+ //getting 
+# GET http://localhost:5000/user/1
+ 
+
+#####
+ //Getting student - details
+GET http://localhost:5000/student
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiU1RVREVOVCIsInVzZXJJZCI6MiwiaWF0IjoxNzYxMDI2NjcxLCJleHAiOjE3NjExMTMwNzF9.SkjEJsEF0oYnVFqQVDJ_41TVMoR5q27SA3la02DLi_kHAURByrjmVyA5Lo8VviWiAnZE8f5kbOhxWjesmktRAw
+Content-Type: application/json
+
+#####
+//Getting teacher - details
+GET http://localhost:5000/teacher
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6MywiaWF0IjoxNzYxMDI3Mjc5LCJleHAiOjE3NjExMTM2Nzl9.qFS31NGJlStF5V2OHlrvSkGcbXyVxLjagTZpJTOH6TZ5sI6RXFITqVDlI0b4EARoiIWb5EePOo85HNVp87KHKQ
+Content-Type: application/json
+
+
+#####
+//Adding a course
+GET http://localhost:5000/course
+{
+  
+  "courseName": "Algebra Basics",
+  "description": "Introduction to algebraic concepts and problem-solving.",
+  "teacher": {
+     "teacherId": 1,
+        "fullName": "Amber Drew",
+        "subject": "maths",
+        "contactNumber": "7896540321",
+        "email": "t1@gmail.com",
+        "yearsOfExperience": 29
+  }
+}
+
+
+##### Working course addd
+# GET http://localhost:5000/course
+# {
+  
+#   "courseName": "Algebra Basics",
+#   "description": "Introduction to algebraic concepts and problem-solving.",
+#   "teacher": {
+#      "teacherId": 1,
+#         "fullName": "Amber Drew",
+#         "subject": "maths",
+#         "contactNumber": "7896540321",
+#         "email": "t1@gmail.com",
+#         "yearsOfExperience": 29
+#   },
+#   "students": [
+#     {
+#         "studentId": 2,
+#           "fullName": "Amber Drew",
+#           "dateOfBirth": "2000-05-05T00:00:00.000+00:00",
+#           "contactNumber": "7896540321",
+#           "email": "amber@gmail.com",
+#           "address": "Winston"
+#     }
+#   ]
+# }
+
+
+
+
