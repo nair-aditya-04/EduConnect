@@ -2,14 +2,14 @@ POST http://localhost:5000/user/register
 Content-Type: application/json
 
 {
-    "username": "teach2",
+    "username": "teachR",
     "password": "Teacher1",
     "role": "TEACHER",
-    "fullName": "Teacher Sample A",
+    "fullName": "Teacher Sample R",
     "contactNumber": "9087654321",
-    "email": "teacher2@gmail.com",
-    "subject": "CS",
-    "yearsOfExperience": 3
+    "email": "teacher3@gmail.com",
+    "subject": "FS",
+    "yearsOfExperience": 5
 }
 ###
 //Register - Student
@@ -17,12 +17,12 @@ POST http://localhost:5000/user/register
 Content-Type: application/json
 
 {
-    "username": "student1",
+    "username": "studentR",
     "password": "Student1",
     "role": "STUDENT",
-    "fullName": "Student Sample A",
+    "fullName": "Student Sample R",
     "contactNumber": "9807654321",
-    "email": "student1@gmail.com",
+    "email": "student4@gmail.com",
     "address": "25 Park Street, Kolkata, West Bengal, 700016",
     "dateOfBirth": "2002-08-21"
 }
@@ -32,8 +32,9 @@ POST http://localhost:5000/user/login
 Content-Type: application/json
 
 {
-    "username": "teach2",
+    "username": "teach3",
     "password": "Teacher1"
+
 }
 ###
 // Student Login
@@ -59,7 +60,20 @@ Content-Type: application/json
         "teacher_id":1
     }
 }
+###
+//Add course - 2
+POST http://localhost:5000/course
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6MiwiaWF0IjoxNzYxMDQ2NTMxLCJleHAiOjE3NjExMzI5MzF9.L4wh76uEAbG8ykKJcC-iKVKDXGWAsXtSk5QNBOVRcAutMmc3EUMQIzcxn973k7vT6-ae8ktBO6vBPG8aXOBcTg
+Content-Type: application/json
 
+
+{
+    "courseName": "DS",
+    "description": "Data Structures",
+    "teacher" : {
+        "teacherId":2
+    }
+}
 ###
 //Get all courses
 GET http://localhost:5000/course
@@ -73,7 +87,7 @@ Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6M
 Content-Type: application/json
 
 ###
-// Get courses by Teacher by id
+// Get courses by Teacher id
 GET http://localhost:5000/course/teacher/2
 Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6NCwiaWF0IjoxNzYxMTA5NDkzLCJleHAiOjE3NjExOTU4OTN9.IGaJPK91fioSpUJ_1WbWcwQUj9qqXubYrPTJiRXLLjm64KtDxL65o_kjO2Hx3ugs18SzSI2s7q2Lcb09dewFSw
 Content-Type: application/json
@@ -108,24 +122,6 @@ GET http://localhost:5000/teacher/yearsofexperience
 Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6NCwiaWF0IjoxNzYxMTA5NDkzLCJleHAiOjE3NjExOTU4OTN9.IGaJPK91fioSpUJ_1WbWcwQUj9qqXubYrPTJiRXLLjm64KtDxL65o_kjO2Hx3ugs18SzSI2s7q2Lcb09dewFSw
 Content-Type: application/json
 
-
-
-
-
-###
-//Add course
-POST http://localhost:5000/course
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVEVBQ0hFUiIsInVzZXJJZCI6MiwiaWF0IjoxNzYxMDQ2NTMxLCJleHAiOjE3NjExMzI5MzF9.L4wh76uEAbG8ykKJcC-iKVKDXGWAsXtSk5QNBOVRcAutMmc3EUMQIzcxn973k7vT6-ae8ktBO6vBPG8aXOBcTg
-Content-Type: application/json
-
-
-{
-    "courseName": "DS",
-    "description": "Data Structures",
-    "teacher" : {
-        "teacherId":2
-    }
-}
 
 ###
 //Add enrollment

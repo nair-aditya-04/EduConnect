@@ -56,7 +56,8 @@ public class UserLoginServiceImpl implements UserDetailsService {
             throw new Exception("Email '" + email + "' already exists.");
         }
 
-        User user = new User();
+       
+        User user = new User();  // manually setting UserRegDTO to User
         user.setUsername(username);
         user.setPassword(passwordEncoder.encode(userRegistrationDTO.getPassword()));
         user.setRole(role.toUpperCase());
